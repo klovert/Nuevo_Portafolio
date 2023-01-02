@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio Personal</title>
+
+    <!--Favicon -->
+    <link rel="shortcut icon" href="./images/mylogo.svg" type="image/x-icon" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #Sidebar
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./images/logo2.png" alt="Klovert" width="80" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Klovert Gonzales">Klovert Gonzales</h1>
+
+            <a
+              href="./file/Klovert-Alexis-Gonzales-Valladares_CV.pdf"
+              download="Curriculum Klovert Gonzales"
+            >
+              <div class="buttonCv">
+                <div class="button-wrapper">
+                  <div class="textCv">Descargar CV</div>
+                  <span class="icon">
+                    <svg
+                      viewBox="0 0 24 24"
+                      preserveAspectRatio="xMidYMid meet"
+                      height="2em"
+                      width="2em"
+                      role="img"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                        stroke-linecap="round"
+                        stroke="currentColor"
+                        fill="none"
+                      ></path>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Mostrar Datos</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Correo</p>
+
+                <a
+                  href="mailto:kgonzalesv8@gmail.com"
+                  class="contact-link"
+                  target="_blank"
+                  >kgonzalesv8@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Celular</p>
+
+                <a
+                  href="https://api.whatsapp.com/send?phone=34678112929&text=Hola..."
+                  class="contact-link"
+                  target="_blank"
+                  >678 11 29 29</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Cumpleaños</p>
+
+                <time datetime="1982-06-23">25 de febrero, 1996</time>
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Ubicación</p>
+
+                <address>Alcobendas, Madrid, España</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/klovert-gonzales-valladares/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://github.com/klovert"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.behance.net/dranshot21"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-behance"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #Main-contenido
+    -->
+
+      <div class="main-content">
+        <!--
+        - #Menu
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>Sobre mi</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resumen</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portafolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contacto</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #Sobre mi
+      -->
+
+        <article class="about active" data-page="sobre mi">
+          <header>
+            <h2 class="h2 article-title">Sobre mi</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Me gusta aprender, emprender y compartir lo aprendido, soy un
+              amante del desarrollo de tecnologías. Soy una persona autodidacta
+              y proactiva, con capacidad de rápido aprendizaje, capaz de liderar
+              y fomentar el trabajo en equipo; persistente en las tareas
+              emprendidas y me adapto a diferentes tipos de situaciones de
+              manera responsable y honesta.
+            </p>
+
+            <p>
+              Soy constante al buscar el cumplimiento de los objetivos
+              definidos. Por lo general no limito mi tiempo al desarrollo y
+              aprendizaje, actualmente divido mi tiempo en mis proyectos
+              personales y como freelance.
+            </p>
+          </section>
+
+          <!--
+          - Que puedo hacer?
+        -->
+
+          <section class="service">
+            <h3 class="h3 service-title">Que puedo hacer?</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./images/web-design-2.png"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Diseño web</h4>
+
+                  <p class="service-item-text">
+                    Diseño moderno acorde a la marca de tu empresa u
+                    organización.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./images/coding-2.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Desarrollo Web</h4>
+
+                  <p class="service-item-text">
+                    Desarrollo de landing page, corporativa o e-commerce.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./images/responsive-design.png"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Responsive</h4>
+
+                  <p class="service-item-text">
+                    Sitios web adaptables para dispositivos moviles y tablets.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./images/graphic-design-2.png"
+                    alt="camera icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Diseño gráfico</h4>
+
+                  <p class="service-item-text">
+                    Creacion de contenido gráfico y multimedia.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!--
+        - #Resumen
+      -->
+
+        <article class="resume" data-page="resumen">
+          <header>
+            <h2 class="h2 article-title">Resumen</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Educación</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Universidad Privada Antenor Orrego
+                </h4>
+
+                <span>2014 — 2019</span>
+
+                <p class="timeline-text">Egresado de Ingeniería de Software.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Centro de Idiomas - UPAO</h4>
+
+                <span>2017 — 2018</span>
+
+                <p class="timeline-text">Inglés nivel B2.</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experiencia</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Desarrollo Web y Marketing
+                </h4>
+
+                <span>2021 — 2022</span>
+
+                <p class="timeline-text">Trading Store.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Desarrollo Web</h4>
+
+                <span>2020 — 2021</span>
+
+                <p class="timeline-text">Servitax Soluciones Integradas SAC.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Dependiente</h4>
+
+                <span>2019 — 2019</span>
+
+                <p class="timeline-text">Elektra.</p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Call Center</h4>
+
+                <span>2016 — 2016</span>
+
+                <p class="timeline-text">Atento.</p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">Mis habilidades</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Front-end</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">WordPress</h5>
+                  <data value="75">75%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 75%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">UI/UX</h5>
+                  <data value="70">70%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Base de Datos</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #Portafolio
+      -->
+
+        <article class="portfolio" data-page="portafolio">
+          <header>
+            <h2 class="h2 article-title">Portafolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>Todo</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Desarrollo web</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Proyectos</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Diseño gráfico</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Seleccionar categoría
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>Todo</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Desarrollo web</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Proyectos</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Diseño gráfico</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="proyectos"
+              >
+                <a
+                  href="https://calculator-dark-light-css-js.netlify.app/"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./images/project-1.jpg" alt="" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Calculadora</h3>
+
+                  <p class="project-category">Proyecto</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="desarrollo web"
+              >
+                <a href="https://klovert.github.io/Web_JS/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./images/project-2.jpg" alt="" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Landing Page</h3>
+
+                  <p class="project-category">Desarrollo web</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="desarrollo web"
+              >
+                <a href="https://cacia-la.org/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./images/project-3.jpg"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Cacia</h3>
+
+                  <p class="project-category">Desarrollo web</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="desarrollo web"
+              >
+                <a
+                  href="https://klovert.github.io/Web_Responsive/#"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./images/project-4.jpg"
+                      alt="brawlhalla"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Landing Page</h3>
+
+                  <p class="project-category">Desarrollo web</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="diseño gráfico"
+              >
+                <a
+                  href="https://www.behance.net/gallery/135860785/Proyectos-realizados"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./images/project-5.jpg"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Banner RRSS</h3>
+                  <p class="project-category">Diseño gráfico</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="desarrollo web"
+              >
+                <a href="https://tvendes.com/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./images/project-6.jpg"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Tvendes</h3>
+                  <p class="project-category">Desarrollo web</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="diseño gráfico"
+              >
+                <a
+                  href="https://www.behance.net/gallery/134000433/Flyers-de-productos"
+                  target="_blank"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./images/project-7.jpg"
+                      alt="summary"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Banner RRSS</h3>
+                  <p class="project-category">Diseño gráfico</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="proyectos"
+              >
+                <a href="https://animationcssjss.netlify.app/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./images/project-8.jpg"
+                      alt="task manager"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Animaciones CSS & js</h3>
+                  <p class="project-category">Proyectos</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="desarrollo web"
+              >
+                <a href="https://tradingstore.pe/" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./images/project-9.jpg"
+                      alt="arrival"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Trading Store</h3>
+                  <p class="project-category">Desarrollo web</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #Contacto
+      -->
+
+        <article class="contact" data-page="contacto">
+          <header>
+            <h2 class="h2 article-title">Contacto</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3031.911875325866!2d-3.637445885215848!3d40.54353605584259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422cf1184910ef%3A0x842ab5996e3022a0!2sC.%20del%20Fuego%2C%2034%2C%2028100%20Alcobendas%2C%20Madrid!5e0!3m2!1ses!2ses!4v1672654439813!5m2!1ses!2ses"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contáctame</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="to_name"
+                  id="to_name"
+                  class="form-input"
+                  placeholder="Nobres"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="from_name"
+                  id="from_name"
+                  class="form-input"
+                  placeholder="Correo"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                id="message"
+                class="form-input"
+                placeholder="Mensaje"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Enviar mensaje</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+
+    <!-- Email JS Link -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("M5dRT7hzoZ2U4qYUs");
+    </script>
+
+    <!--IonIcon link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
